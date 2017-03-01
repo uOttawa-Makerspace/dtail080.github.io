@@ -110,4 +110,6 @@ tr:nth-child(even) {
 
  .main-title {
    font-size: 400%;
+   color: #00008b;
+   font-family: 'Baloo', cursive;
  }
