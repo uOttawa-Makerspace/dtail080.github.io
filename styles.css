@@ -41,7 +41,7 @@ header {
 
   nav {
     float: left;
-    background-color:#dddddd;
+    background-color: white;
     color: white;
     max-width: 275px;
     margin: 0;
@@ -73,8 +73,6 @@ button {
     width: 200px;
     margin: 4px 2px;
     cursor: pointer;
-    font-family: 'Baloo', cursive;
-
 }
 table {
     font-family: sans-serif;
@@ -95,7 +93,7 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #;
+    background-color: #dddddd;
 }
 
 .right{
