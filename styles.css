@@ -20,9 +20,12 @@ body {
     flex: 1 100%;
 }
 article {
-  margin-left: 270px;
-    padding: 1em;
+    margin-left: 270px;
+    padding: 1px;
     overflow: hidden;
+    max-width: 90%;
+
+
 }
 header {
     padding: 1em;
@@ -32,10 +35,14 @@ header {
     text-align: center;
 }
  footer{
-   padding: 1em;
+   padding: 3px;
    color: white;
-   background-color: 00008B;
-   clear: left;
+   background-color: #00008B;
+   text-align: right;
+   font-size: 12px;
+ }
+
+ .footerfrench{
    text-align: right;
  }
 
@@ -48,7 +55,7 @@ header {
     padding: 1em;
     height: 100%;
     position: fixed;
-    border-right: 1px solid blue;
+    border-right: 0px solid blue;
 }
 
 nav ul {
@@ -61,8 +68,12 @@ nav ul a {
 }
 
 button {
-    background-color: 			#00008b
-    ;
+    cursor: pointer;
+    font-family: 'Baloo', cursive;
+
+}
+.navbutton {
+    background-color: 			#00008b;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -72,10 +83,54 @@ button {
       font-size: 16px;
     width: 200px;
     margin: 4px 2px;
+    border-radius: 25px;
     cursor: pointer;
     font-family: 'Baloo', cursive;
 
 }
+
+.tablebutton{
+
+      background-color: 			#00008b;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 25px;
+      font-size: 14px;
+      width: 150px;
+      height: 100px;
+      margin: 2px 2px;
+      cursor: pointer;
+      font-family: 'Baloo', cursive;
+      column-width:250px;
+
+  }
+
+.footerbutton{
+  background-color: 			#00008b;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  width: 150px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Baloo', cursive;
+
+}
+  button:hover{
+    background-color:black}
+
+
 table {
     font-family: sans-serif;
     border-collapse: collapse;
@@ -95,7 +150,13 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #;
+    background-color: #dddddd;
+}
+
+thead{
+  border-bottom: 2px solid #000000;
+  text-align: right;
+  padding: 10px;
 }
 
 .right{
@@ -111,7 +172,74 @@ tr:nth-child(even) {
   }
 
  .main-title {
-   font-size: 400%;
+   font-size:60px;
+   color: #00008b;
+   font-family: 'Baloo', cursive;
+   padding: 5px;
+ }
+ .page-title {
+   font-size: 200%;
    color: #00008b;
    font-family: 'Baloo', cursive;
  }
+ .page-table table{
+
+ }
+ .page-table th {
+     border: 0px solid black;
+     text-align: center;
+     padding: 5px;
+
+
+ }
+ .page-table td {
+     border: 0px solid black;
+     text-align:left;
+     padding: 5px;
+ }
+
+ .table-img {
+   padding: 5px;
+   max-width:200px;
+   width: 90%
+
+ }
+ .table-data th{
+   border: 0px solid black;
+   text-align: right;
+   padding: 5px;
+ }
+ .table-data td {
+     border: 0px solid black;
+     text-align:right;
+     padding: 10px;
+
+
+}
+ .image-button{
+ width: 250px;
+ border: solid;
+ border-width: medium;
+ border-color: #00008b;
+ border-radius: 25px;
+ }
+
+
+div.transbox {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  opacity: 0.79;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.transbox:hover{
+   opacity: 0.39;
+}
+}
