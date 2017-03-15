@@ -105,6 +105,7 @@ button {
       cursor: pointer;
       font-family: 'Baloo', cursive;
       column-width:250px;
+      vertical-align: text-top;
 
   }
 
@@ -187,7 +188,8 @@ thead{
  .page-table th {
      border: 0px solid black;
      text-align: center;
-     padding: 5px;
+     padding: 15px;
+     vertical-align: text-top;
 
 
  }
@@ -195,6 +197,11 @@ thead{
      border: 0px solid black;
      text-align:left;
      padding: 5px;
+      vertical-align: text-top;
+ }
+
+ .button-table{
+
  }
 
  .table-img {
@@ -256,7 +263,5 @@ div.transbox:hover{
     width: 240px;
   }
 
-  article {
-    margin-left: auto;
-  }
+
 }
