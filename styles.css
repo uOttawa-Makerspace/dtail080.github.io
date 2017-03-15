@@ -47,7 +47,6 @@ header {
  }
 
   nav {
-    float: left;
     background-color:#dddddd;
     color: white;
     max-width: 275px;
@@ -242,4 +241,22 @@ div.transbox p {
 div.transbox:hover{
    opacity: 0.39;
 }
+
+.logo {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 240px;
+  }
+
+  article {
+    margin-left: auto;
+  }
 }
