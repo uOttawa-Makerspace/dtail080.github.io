@@ -246,18 +246,21 @@ thead{
  }
 
 
-div.transbox {
+.transbox {
   width: 250px;
   background-color: #ffffff;
   border-radius: 25px;
   opacity: 0.79;
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  position: relative;
 }
 
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+.transbox p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 div.transbox:hover{
