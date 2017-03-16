@@ -210,10 +210,16 @@ thead{
    width: 90%
 
  }
+
+ .table-data{
+
+   width: 100%;
+ }
  .table-data th{
    border: 0px solid black;
    text-align: right;
    padding: 5px;
+
  }
  .table-data td {
      border: 0px solid black;
@@ -221,9 +227,18 @@ thead{
      padding: 10px;
 
 
+
 }
  .image-button{
  width: 250px;
+ border: solid;
+ border-width: medium;
+ border-color: #00008b;
+ border-radius: 25px;
+ }
+
+ .image-triangle{
+ width: 100%;
  border: solid;
  border-width: medium;
  border-color: #00008b;
@@ -262,6 +277,8 @@ div.transbox:hover{
   .logo {
     width: 240px;
   }
-
+  article {
+ margin-left: auto;
+}
 
 }
