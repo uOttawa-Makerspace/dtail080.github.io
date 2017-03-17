@@ -105,6 +105,7 @@ button {
       cursor: pointer;
       font-family: 'Baloo', cursive;
       column-width:250px;
+      vertical-align: text-top;
 
   }
 
@@ -187,7 +188,8 @@ thead{
  .page-table th {
      border: 0px solid black;
      text-align: center;
-     padding: 5px;
+     padding: 15px;
+     vertical-align: text-top;
 
 
  }
@@ -195,6 +197,11 @@ thead{
      border: 0px solid black;
      text-align:left;
      padding: 5px;
+      vertical-align: text-top;
+ }
+
+ .button-table{
+
  }
 
  .table-img {
@@ -203,15 +210,22 @@ thead{
    width: 90%
 
  }
+
+ .table-data{
+
+   width: 100%;
+ }
  .table-data th{
    border: 0px solid black;
    text-align: right;
    padding: 5px;
+
  }
  .table-data td {
      border: 0px solid black;
      text-align:right;
      padding: 10px;
+
 
 
 }
@@ -223,19 +237,30 @@ thead{
  border-radius: 25px;
  }
 
+ .image-triangle{
+ width: 100%;
+ border: solid;
+ border-width: medium;
+ border-color: #00008b;
+ border-radius: 25px;
+ }
 
-div.transbox {
+
+.transbox {
   width: 250px;
   background-color: #ffffff;
   border-radius: 25px;
   opacity: 0.79;
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  position: relative;
 }
 
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+.transbox p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 div.transbox:hover{
@@ -255,8 +280,8 @@ div.transbox:hover{
   .logo {
     width: 240px;
   }
-
   article {
-    margin-left: auto;
-  }
+ margin-left: auto;
+}
+
 }
