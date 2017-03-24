@@ -3,7 +3,8 @@ body, html {
   margin: 0;
 }
 body {
-    font-family: sans-serif;
+    font-family:  sans-serif;
+   font-style: light;
 
 }
 .navtext{
@@ -72,7 +73,7 @@ nav ul a {
 
 button {
     cursor: pointer;
-    font-family: 'Baloo', cursive;
+    font-family: 'Baloo', Normal;
 
 }
 .navbutton {
@@ -88,7 +89,7 @@ button {
     margin: 4px 2px;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'Baloo', cursive;
+    font-family: 'Baloo', Normal;
 
 }
 
@@ -107,7 +108,7 @@ button {
       height: 100px;
       margin: 2px 2px;
       cursor: pointer;
-      font-family: 'Baloo', cursive;
+      font-family: 'Baloo', Normal;
       column-width:250px;
       vertical-align: text-top;
 
@@ -128,7 +129,7 @@ button {
   width: 150px;
   margin: 4px 2px;
   cursor: pointer;
-  font-family: 'Baloo', cursive;
+  font-family: 'Baloo', Normal;
 
 }
   button:hover{
@@ -178,13 +179,13 @@ thead{
  .main-title {
    font-size:60px;
    color: #00008b;
-   font-family: 'Baloo', cursive;
+   font-family: 'Baloo', Normal;
    padding: 5px;
  }
  .page-title {
    font-size: 200%;
    color: #00008b;
-   font-family: 'Baloo', cursive;
+   font-family: 'Baloo', Normal;
  }
  .page-table table{
 
@@ -229,13 +230,30 @@ thead{
      border: 0px solid black;
      text-align:right;
      padding: 10px;
+}
 
-
+.table-button td{
+  align-items: center;
+  align-content: center;
 
 }
+
+.table-jobs{
+
+}
+
+.table-jobs th{
+  text-align: left;
+  border: 2px;
+  font-family: sans-serif, Bold;
+
+}
+
  .image-button{
  width: 250px;
+ height: 175px;
  border: solid;
+ align-items: center;
  border-width: medium;
  border-color: #00008b;
  border-radius: 25px;
@@ -257,6 +275,7 @@ thead{
   opacity: 0.79;
   filter: alpha(opacity=60); /* For IE8 and earlier */
   position: relative;
+
 }
 
 .transbox p {
@@ -265,6 +284,10 @@ thead{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: 'Baloo';
+  font-size: 20px;
 }
 
 div.transbox:hover{
