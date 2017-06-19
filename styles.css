@@ -3,12 +3,11 @@ body, html {
   margin: 0;
 }
 body {
-    font-family:  sans-serif;
-   font-style: light;
-
+  font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
 }
 .navtext{
-  color: #00008b
+  color: #5f9ea0
 }
 
 .flex-container {
@@ -40,11 +39,19 @@ header {
     text-align: center;
 }
  footer{
-   padding: 3px;
+   padding: 1rem;
+   padding-right: 60px;
    color: white;
-   background-color: #00008B;
+   background-color: #5f9ea0;
+   border-top-color: #366;
+
    text-align: right;
    font-size: 12px;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   left: 0;
+
  }
 
  .footerfrench{
@@ -73,11 +80,11 @@ nav ul a {
 
 button {
     cursor: pointer;
-    font-family: 'Baloo', Normal;
+    font-family: 'Raleway', Normal;
 
 }
 .navbutton {
-    background-color: 			#00008b;
+    background-color: 			#5f9ea0;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -89,13 +96,13 @@ button {
     margin: 4px 2px;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'Baloo', Normal;
+    font-family: 'Raleway', Normal;
 
 }
 
 .tablebutton{
 
-      background-color: 			#00008b;
+      background-color: 			#5f9ea0;
       border: none;
       color: white;
       padding: 15px;
@@ -108,14 +115,14 @@ button {
       height: 100px;
       margin: 2px 2px;
       cursor: pointer;
-      font-family: 'Baloo', Normal;
+      font-family: 'Raleway', Normal;
       column-width:250px;
       vertical-align: text-top;
 
   }
 
 .footerbutton{
-  background-color: 			#00008b;
+  background-color: 			#5f9ea0;
   border: solid;
   border-color: white;
   border-width: 2px;
@@ -129,7 +136,7 @@ button {
   width: 150px;
   margin: 4px 2px;
   cursor: pointer;
-  font-family: 'Baloo', Normal;
+  font-family: 'Raleway', Normal;
 
 }
   button:hover{
@@ -168,7 +175,7 @@ thead{
   float: right;
   margin-left: 10px;
   margin-bottom: 10px;
-  border:5px solid #00008B;
+  border:5px solid #5f9ea0;
 }
 @media all and (min-width: 768px) {
     .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
@@ -178,14 +185,14 @@ thead{
 
  .main-title {
    font-size:60px;
-   color: #00008b;
-   font-family: 'Baloo', Normal;
+   color: #366;
+   font-family: 'Raleway', Normal;
    padding: 5px;
  }
  .page-title {
    font-size: 200%;
-   color: #00008b;
-   font-family: 'Baloo', Normal;
+   color: #5f9ea0;
+   font-family: 'Raleway', Normal;
  }
  .page-table table{
 
@@ -255,7 +262,7 @@ thead{
  border: solid;
  align-items: center;
  border-width: medium;
- border-color: #00008b;
+ border-color: #5f9ea0;
  border-radius: 25px;
  }
 
@@ -263,7 +270,7 @@ thead{
  width: 100%;
  border: solid;
  border-width: medium;
- border-color: #00008b;
+ border-color: #5f9ea0;
  border-radius: 25px;
  }
 
@@ -280,14 +287,27 @@ thead{
 
 .transbox p {
   position: absolute;
+  padding: 3px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-family: 'Baloo';
+  color: #366;
+  background-color: #dddddd;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #5f9ea0;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+  font-family: 'Playfair Display', black 900;
   font-size: 20px;
+}
+
+hr {
+  border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #5f9ea0; /* old IE */
+    background-color: #5f9ea0; /* Modern Browsers */
 }
 
 div.transbox:hover{
@@ -295,7 +315,9 @@ div.transbox:hover{
 }
 
 .logo {
-  width: 100%;
+  width: 85%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -306,6 +328,7 @@ div.transbox:hover{
 
   .logo {
     width: 240px;
+
   }
   article {
  margin-left: auto;
