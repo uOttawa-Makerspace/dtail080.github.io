@@ -7,6 +7,8 @@ body {
 font-family: 'Playfair Display', serif;
 }
 .navtext{
+  font-size: 12px;
+  font-family: 'Raleway', Normal;
   color: #5f9ea0
 }
 
@@ -39,19 +41,30 @@ header {
     text-align: center;
 }
  footer{
+   align-content: right;
+   align-items: right;
    padding: 1rem;
    padding-right: 60px;
    color: white;
    background-color: #5f9ea0;
    border-top-color: #366;
-
    text-align: right;
    font-size: 12px;
    position: fixed;
-   right: 0;
+   width: 100%;
+   right:0;
    bottom: 0;
    left: 0;
 
+ }
+
+ .tablefooter{
+
+border-color: black;
+border-width: 2px;
+ }
+ .tablefooter tr{
+   display: inline-block;
  }
 
  .footerfrench{
@@ -255,6 +268,8 @@ thead{
   font-family: sans-serif, Bold;
 
 }
+
+
 
  .image-button{
  width: 250px;
