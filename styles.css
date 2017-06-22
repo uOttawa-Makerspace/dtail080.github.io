@@ -6,6 +6,10 @@ body {
   font-family: 'Raleway', sans-serif;
 font-family: 'Playfair Display', serif;
 }
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
 .navtext{
   font-size: 12px;
   font-family: 'Raleway', Normal;
@@ -22,8 +26,8 @@ font-family: 'Playfair Display', serif;
 
 .flex-container > * {
     padding: 15px;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+    -webkit-flex: 10%;
+    flex: 10%;
 }
 article {
     margin-left: 270px;
@@ -41,10 +45,11 @@ header {
     text-align: center;
 }
  footer{
+   margin-right: 60px;
    align-content: right;
    align-items: right;
    padding: 1rem;
-   padding-right: 60px;
+   padding-right: 160px;
    color: white;
    background-color: #5f9ea0;
    border-top-color: #366;
@@ -60,10 +65,14 @@ header {
 
  .tablefooter{
 
+margin-right: 60px;
 border-color: black;
 border-width: 2px;
+padding-right: 60px;
  }
  .tablefooter tr{
+   margin-right: 60px;
+
    display: inline-block;
  }
 
@@ -140,7 +149,7 @@ button {
   border-color: white;
   border-width: 2px;
   color: white;
-  padding: 5px 5px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -172,6 +181,7 @@ td {
     border: 0px solid #dddddd;
     text-align:left;
     padding: 10px;
+    line-height: 20px;
 }
 
 tr:nth-child(even) {
