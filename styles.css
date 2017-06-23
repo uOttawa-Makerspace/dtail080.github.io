@@ -9,7 +9,7 @@ body {
 font-family: 'Playfair Display', serif;
 }
 
-p{
+p {
   font-family: 'Raleway', sans-serif;
   line-height: 20px;
 }
@@ -19,11 +19,20 @@ ul{
   line-height: 20px;
 }
 
+ol{
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+}
+
 article {
     margin-left: 270px;
     padding: 1px;
+    padding-bottom: 200px;
     overflow: hidden;
-    max-width: 90%;
+    max-width: 100%;
+    font-family: 'Playfair Display', serif;
+
+
 
 
 }
@@ -33,6 +42,9 @@ header {
     background-color: 000000;
     clear: left;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+
 }
  footer{
    margin-right: 60px;
@@ -53,6 +65,25 @@ header {
 
  }
 
+ h1  {
+
+   font-family: 'Raleway', sans-serif;
+
+ }
+
+ h2 {
+   font-family: 'Raleway', sans-serif;
+font-size: 18px;
+ }
+
+h3{
+  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+
+
+}
 
 /*All nav bar stuff*/
  .navtext{
@@ -104,7 +135,7 @@ header {
 
  /*All tables*/
  table {
-     font-family: sans-serif;
+   font-family: 'Raleway', Normal;
      border-collapse: collapse;
         width: 100%;
  }
@@ -315,7 +346,7 @@ padding-right: 60px;
  border: solid;
  border-width: medium;
  border-color: #5f9ea0;
- border-radius: 25px;
+ border-radius: 15px;
  }
 
 
