@@ -342,7 +342,9 @@ padding-right: 60px;
  }
 
  .image-triangle{
- width: 100%;
+width:100%;
+max-width: 1000px;
+align-items: center;
  border: solid;
  border-width: medium;
  border-color: #5f9ea0;
