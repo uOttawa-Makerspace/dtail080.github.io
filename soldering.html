@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Soldering</title>
-  </head>
-  <body>
+  <title>Soldering</title>
+</head>
 
-    <nav class="nav">
-      <center>
+<body>
 
- <a href="index.html"> <img class="logo" title="maker club" src="pictures/CEED_LOGO_BLACK_ORANGE.png" alt="" /></a>
-  <ul>
-          <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
-          <a href="jobs.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
-          <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
-
-          <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:volunteer@makerepo.com?Subject=Content%20Error" target="_top">volunteer@makerepo.com</a></p>
-        </center>
-      </ul>
-    </nav>
-<article>
-  <div style="max-width: 80%; margin-left:auto;margin-right:auto;">
-
+  <nav class="nav">
     <center>
-      <h1>Coming soon</h1>
+
+      <a href="index.html"> <img class="logo" title="maker club" src="pictures/CEED_LOGO_BLACK_ORANGE.png" alt="" /></a>
+      <ul>
+        <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
+        <a href="jobs.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
+        <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
+
+        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:volunteer@makerepo.com?Subject=Content%20Error" target="_top">volunteer@makerepo.com</a></p>
     </center>
+    </ul>
+  </nav>
+  <article>
+    <div style="max-width: 80%; margin-left:auto;margin-right:auto;">
+
+      <center>
+        <h1 class="main-title">Soldering</h1>
+        <hr/>
+      </center>
+      <p>Soldering is a process often used when working with electronics. It consists of melting one metal to connect two or more metal pieces.
+        This connection not only creates an electrical connection, but it also secures a component in place. <br> We will be going over two different
+        situations where soldering is used. The first being when soldering two different wires together
+        and the second is when soldering a component to a perfboard or a PCB. A perfboard is a rigid board which has a grid of holes drilled into it. Each hole is surrounded by a copper pad onto which you can adhere solder. A PCB is a printed circuit board. They are similar to perfboards except that the components are connected using a conductive material built into the board.
+ </p><hr/>
+      <h1>The soldering process</h1>
+      <h2> What is needed:</h2>
+        <ul>
+          <li> Soldering iron</li>
+          <li> Solder (preferably lead free)</li>
+          <li> Components you want to solder</li>
+          <li>Vent fan</li>
+
+          <h3>Optional items</h3>
+          <li>Solder wick</li>
+          <li>De-soldering tool</li>
+          <li>Soldering mat</li>
+        </ul>
+
+      <h2>Soldering two wires together</h2>
+
+      <p>Soldering two wires is the best way to practice soldering at the very beginning. There are two types of wire, either stranded or solid core. Both have a metal core wrapped in a plastic covering. To see the metal, you need to expose the core by removing
+        the plastic. There are special tools to do this called “wire strippers”. However, it is possible to do the same thing with scissors. A video on how to strip the wire is available <a href="bum.html">here</a>.
+      </p>
+      <img title="Types of wire" src="pictures/solidvsstranded.png" alt="" class="image-triangle" />
+
+      <!-- <div class="floating-box">
+        <p><b>Which wire is right for me?</b><br>Stranded wire is more flexible and is ideal for projects where the wire will be moving or bending and unbending repeatedly. Solidcore is a lot easier to use when you are attaching the wire to a perfboard,
+          PCB, or when inserting into a breadboard.
+        </p>
+      </div> -->
+      <h3>Procedure</h3>
+      <ol>
+        <li>Grab a few wires, strip 1 cm off each end and bend each end in a U shape. </li>
+        <li>Crimp the two wires together with a pair of pliers. </li>
+          <img src="pictures/twowirebent.png" class="image-triangle"/>
+        <li>Hold the soldering iron like a pen. Heat the two wires for 1-2 seconds and then flow solder on the connection. The goal is to heat the connection not the solder. Once you see the solder flow evenly throughout the connection, remove the solder and soldering iron. </li>
+        <img src="pictures/solderwire.png" class="image-triangle"/>
+
+<li> Allow the connection to cool, this usually takes 20-30 seconds. During this time, avoid moving the wires</li>
+<img src="pictures/soldered2wires.png" class="image-triangle"/>
+
+      </ol>
+
+<h2>Soldering to a board</h2>
+<ol>
+<li>Place the lead (metal stick coming from component) or wire through the hole in the perfboard or PCB.</li>
+<li>Holding the soldering iron like a pen, heat the copper pad and lead with soldering iron until the solder begins
+  to flow and forms a strong connection. Remove solder, and then the soldering iro. This process should take only a few seconds.  <img src="pictures/perfsolder.png" class="image-triangle"/>
+</li>
+<li>Allow for the connection to cool </li>
+
+</ol>
 
 
-</article>
+
+
+  </article>
 
   <footer>
 
-    <table class="tablefooter" >
-        <tr>
-          <td>Contact: volunteer@makerepo.com<br>Copyright 2017 &copy; Makerepo.com</td>
+    <table class="tablefooter">
+      <tr>
+        <td>Contact: volunteer@makerepo.com<br>Copyright 2017 &copy; Makerepo.com</td>
         <td>
- <a href="francais/tinkercadfr.html"><button type="button" class="footerbutton">Français</button></a></td>
- </tr>
- </table>
-</footer>
+          <a href="francais/tinkercadfr.html"><button type="button" class="footerbutton">Français</button></a></td>
+      </tr>
+    </table>
+  </footer>
 </body>
 
 </html>
