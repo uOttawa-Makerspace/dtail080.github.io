@@ -12,22 +12,27 @@ body {
 
 p {
   font-family: 'Raleway', sans-serif;
-  line-height: 20px;
+  line-height: 24px;
   font-size: 16px;
 }
 
 ul {
   font-family: 'Raleway', sans-serif;
-  line-height: 20px;
+
+
 }
 
 ol {
   font-family: 'Raleway', sans-serif;
-  line-height: 20px;
+
 }
 
 li:not(:last-child) {
   margin-bottom: 10px;
+  line-height: 18px;
+}
+li{
+  line-height: 20px;
 }
 
 article {
@@ -52,7 +57,7 @@ footer {
   margin-right: 60px;
   align-content: right;
   align-items: right;
-  padding: 1rem;
+  /*padding: 5px;*/
   padding-right: 160px;
   color: white;
   background-color: #5f9ea0;
@@ -94,7 +99,7 @@ h3 {
 nav {
   background-color: #dddddd;
   color: white;
-  max-width: 275px;
+  max-width: 225px;
   margin: 0;
   padding: 1em;
   height: 100%;
@@ -130,6 +135,7 @@ button {
   border-radius: 25px;
   cursor: pointer;
   font-family: 'Raleway', Normal;
+height: 70px;
 }
 
 
@@ -169,14 +175,14 @@ thead {
 
 .tablefooter {
   margin-right: 60px;
-  border-color: black;
-  border-width: 2px;
+  margin-top: 10px;
   padding-right: 60px;
 }
 
 .tablefooter tr {
   margin-right: 60px;
   display: inline-block;
+
 }
 
 
@@ -284,6 +290,7 @@ thead {
   border-radius: 25px;
   font-size: 14px;
   width: 150px;
+  height: 54px;
   margin: 4px 2px;
   cursor: pointer;
   font-family: 'Raleway', Normal;
@@ -380,6 +387,11 @@ button:hover {
   border-color: #5f9ea0;
   border-radius: 15px;
 }
+.image-triangle:hover img {
+  -moz-transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+}
 
 .transbox {
   width: 250px;
@@ -438,4 +450,13 @@ div.transbox:hover {
   }
   article {
     margin-left: auto;
+  }
+
+  #overlay {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-image: url('http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg');
+    background-repeat: no-repeat;
   }
