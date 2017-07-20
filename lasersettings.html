@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="pictures/gears.png" type="image/gif">
+  <title>Laser Cutter Settings</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <center>
+
+      <a href="index.html"> <img class="logo" title="maker club" src="pictures/CEED_LOGO_BLACK_ORANGE.png" alt="" /></a>
+      <ul>
+        <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
+        <a href="jobs.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
+        <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
+
+        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:volunteer@makerepo.com?Subject=Content%20Error" target="_top">volunteer@makerepo.com</a></p>
+    </center>
+    </ul>
+  </nav>
+  <article>
+    <div style="max-width: 80%; margin-left:auto;margin-right:auto;">
+
+      <center>
+        <h1 class="main-title">Laser cutter settings</h1>
+        <hr/>
+      </center>
+      <p>There are three settings which can be manipulated to affect the depth and the appearance of the cut or raster: power, speed and frequency. Power is related to the strength of the laser. The more you increase the power settings the more heat will
+        be applied while cutting. Speed is how quickly the laser will go over the pattern. The slower the speed, the longer the laser will remain still. The longer it remains in one spot, that is, the slower the speed, the deeper it will engrave or the
+        more likely it will cut through the piece
+        <br><br> When in use, the laser emits a set of pulses. Think of it like a printer. It does not print a continuous stream of ink. It actually prints thousands dots per inch. When rastering, the more dots per inch, or the higher the frequency, the
+        darker the area will be. When cutting, adjusting the frequency is similar to adjusting the power. The more pulse per inch, the hotter the material will be. Higher frequency will give a smoother edge.
+        <img title="cura" src="pictures/propertieslaser.png" alt="" class="image-triangle" />
+      </p>
+      <ol>
+        <li><b>Resolution:</b> This settings changes how many many the laser will fire and “mark” the material. The higher the dpi, the crisper the image will be, however this will increase the cut time. Resolution is only important when rastering as it is
+          not used when vectoring. If you are doing a vector only cut, leave the dpi at a mid-range value.
+        </li>
+        <li><b>Options:</b> There are two settings available:
+          <ol>
+            <li type="a">Auto focus: Make sure this setting is turned off. We we do not use this attachment at the makerspace.</li>
+            <li type="a">Center-engraving: This changes how the laser treats the home. For more information on what “homing” means, see step 5: “Preparing laser cutter”. If this is not selected, the laser will default to start at the top left hand side of the page.
+              When selected there are three options:</li>
+            <ul>
+              <li>Top center</li>
+              <li>Left center</li>
+              <li>Center center</li>
+              <li>Page center</li>
+            </ul>
+
+
+        </li>
+
+        <p>Let’s use the following picture to illustrate how each of these functions works. The red circle is where the laser cutter head has been homed. The second image shows the position of the laser head in the laser cutter.
+        </p>
+        <center>
+          <img title="cura" src="pictures/centerdraw.png" alt="" width="300px" />
+
+        </center>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Laser home relative to the image</th>
+              <th>Final product</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Option not selected</td>
+              <td><img title="cura" src="pictures/optionnotselected.png" alt="" /></td>
+              <td>Final produc</td>
+            </tr>
+
+            <tr>
+              <td>Top center</td>
+              <td><img title="cura" src="pictures/topcenter.png" alt="" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Left Center</td>
+              <td><img title="cura" src="pictures/leftcenter.png" alt="" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Center Center</td>
+              <td><img title="cura" src="pictures/centercenter.png" alt="" width="120px" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Page Center</td>
+              <td><img title="cura" src="pictures/pagecenter.png" alt="" width="120px" /></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <li>
+          <b>Job type:</b> You can limit the laser cutter to either do a raster, vector, or combination of the two
+        </li>
+        <li>
+          <b>Piece size:</b> There are two ways of using the piece size. You can either adjust it to the the size of the laser cutter or to the size of the page that you are going to be printing. If you make the piece size smaller than your original it
+          will cut off part of the image.
+        </li>
+
+        <li>
+          <b>Raster settings:</b> This is where you adjust the laser’s speed and power so that you get the desired look on the specific material. <br />You can also choose whether the laser begins rastering from the bottom and works its way upward, or
+          the starts from the top and moves downward.
+          <br /> <br /> Speed: Determines how fast the laser will travel while raster. A lower percentage means a slower speed will create a darker and/or deeper image.
+          <br /><br />Power: Determines how much power is provided. A higher percentage means more power which will create a darker and/or deeper cut.
+
+          <br /> <br />Image dithering changes how the laser cutter interprets the image and converts it into dots. There are 6 different options which can be sorted into two categories either Clipart Modes or Photograph Modes
+          <br /><br />
+          <ul>
+            <li>
+              <b>Clipart Mode:</b>Typically used for anything that has been created in a drawing or 2D design software.<br /><br />
+              <ul class="a">
+                <li>
+                  Standard mode is the default mode and is gives a structured pattern to the dot patterns being rastered.<br />
+                  <img title="cura" src="pictures/ditheringstandard.png" alt="" width="400px" />
+                </li>
+                <li>
+                  Brighten: Used to lighten an image by decreasing the number of dots and giving preference to lighter tones. Most useful when working with wood like products.
+                  <br /> <img title="cura" src="pictures/ditheringbrighten.png" alt="" width="400px" />
+                </li>
+                <li>
+                  Low Res decrease the number of dots in the rastering pattern and lowers the sharpness of the image
+                  <br /> <img title="cura" src="pictures/lowres.png" alt="" width="400px" />
+
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <b>Photograph Modes:</b> Designed to randomize the dot pattern which can make the image look more attractive. They can also be used to create special effects on clipart style images.<br /><br />
+              <ul class="a">
+                <li>
+                  Floyd-Steinberg: Produces an almost wave-like pattern to an image. This works well for some photos containing a great deal of detail. Photos with more monotone swatches of color may not be as pleasing as Jarvis or Stucki modes
+                  <br /> <img title="cura" src="pictures/ditheringfloydsteinberg.png" alt="" width="400px" />
+                </li>
+                <li>
+                  Jarvis – Many users find this mode good for engraving photographs at 300 DPI. This mode produces a very nice looking pattern on almost all photos.
+                  <br /> <img title="cura" src="pictures/ditheringjarvis.png" alt="" width="400px" />
+
+                </li>
+                <li>
+                  Stucki - This mode produces results that are only marginally different than the Jarvis dithering pattern. It is also very good for engraving photographs at 300 DPI. The differences between Jarvis and Stucki are very subtle.
+                  <br /> <img title="cura" src="pictures/ditheringstucki.png" alt="" width="400px" />
+
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <b>Vector Settings:</b>This sections allows to to adjusts the settings to ensure that your vector penetrates as deeply as desired.
+          <br /><br />Speed: Determines how fast the laser will travel along the vector lines. A lower percentage means a slower speed will create a deeper cut.
+          <br /><br />Power: Determines how much power is provided. A higher percentage means more power which will create a deeper cut.
+          <br /><br />Frequency: Determines the number of pulse of the laser per inch it travels in vector mode. A higher frequency means there is more heat being applied. When cutting with wood or cardboard, a lower frequency is prefered. As opposed
+          to higher frequency which is useful for materials like acrylic where a clean edge is prefered. If automatic frequency is selected the pulse is set to 5000 pulses per inch.
+          <br /><br />Vector sorting: This decides the order by which the laser cutter performs the vector cuts. There are two options available
+          <ul class="a">
+            <li>
+              Optimize: Laser will determine the most efficient pattern to cut. This is usually the most time efficient way to cut.
+            </li>
+            <li>
+              Inside out: Laser will start with the innermost vectors and work its way outward.
+            </li>
+          </ul>
+        </li>
+        </ol>
+        When you are done selecting all your settings, click ok. This will take you back to the print page.
+
+  </article>
+
+  <footer>
+
+    <table class="tablefooter">
+      <tr>
+        <td>Contact: volunteer@makerepo.com<br>Copyright 2017 &copy; Makerepo.com</td>
+        <td> <a href="disclaimer.html"><button type="button" class="footerbutton">Disclaimer</button></a></td>
+        <td>
+          <td>
+            <a href="francais/tinkercadfr.html"><button type="button" class="footerbutton">Français</button></a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

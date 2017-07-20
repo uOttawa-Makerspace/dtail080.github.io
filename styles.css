@@ -21,6 +21,9 @@ ul {
 
 
 }
+ul.a {
+  list-style-type: circle;
+}
 
 ol {
   font-family: 'Raleway', sans-serif;
@@ -35,6 +38,16 @@ li{
   line-height: 20px;
 }
 
+.listtext{
+
+}
+
+.listtext li{
+  line-height: 24px;
+  font-size: 16px;
+
+
+}
 article {
   margin-left: 270px;
   padding: 1px;
@@ -312,6 +325,7 @@ button:hover {
   margin-right: 10px;
   margin-bottom: 10px;
   border: 5px solid #5f9ea0;
+  padding: 10px;
 }
 
 .floating-box {
