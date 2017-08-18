@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Laser Cutting</title>
+  <meta charset="utf-8" />
 
   <script type="text/javascript" src="script.js">
   </script>
@@ -21,8 +22,8 @@
         <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
         <a href="opportunities.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
         <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
-
-        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:volunteer@makerepo.com?Subject=Content%20Error" target="_top">volunteer@makerepo.com</a></p>
+        <!-- <a href="#ControlPanel">f</a> -->
+        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:webmaster@makerepo.com?Subject=Content%20Error" target="_top">webmaster@makerepo.com</a></p>
     </center>
     </ul>
   </nav>
@@ -34,7 +35,9 @@
         <hr/>
       </center>
       <h2>What is a laser cutter?</h2>
-      <p>The simplest answer to that question is that it is a laser that cuts. It is composed of a bed or platform onto which the material to be transformed is placed. On top of this there is a mirror and a converging lense which can move in 2 dimensions.
+      <p>The simplest answer to that question is that it is a laser that cuts.
+         It is composed of a bed or platform onto which the material to be transformed is placed.
+          On top of the bed there is the laser cutter head assembly. It is composed of a mirror and a converging lense which can move in 2 dimensions.
         This lense focuses a beam of light which will either cut through or engrave the material below. The laser cutter is optimal for precise and complex jobs.
       </p>
       <h2>Getting to know the laser cutter setup</h2>
@@ -48,15 +51,16 @@
         </ul>
         <img title="cura" src="pictures/lasercuttersetup.png" alt="" class="image-triangle" />
       </p>
-      <p>As shown in the image below, the laser cutter has an on/off located on the bottom left hand side of the laser. The main control panel located on the front. </p>
+      <p>As shown in the image below, the laser cutter has an on/off located on the bottom left
+        hand side of the laser. The main control panel located on the front. </p>
       <img title="cura" src="pictures/gtklaser.png" alt="" class="image-triangle" id="imgZoom" onmousemove="zoomIn(event)" onmouseout="zoomOut()" />
-      <!-- <div id="overlay" onmousemove="zoomIn(event)"></div>
-      <img id="imgZoom" width="200px" height="200px" onmousemove="zoomIn(event)" onmouseout="zoomOut()" src="http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg">
-<div id="overlay" onmousemove="zoomIn(event)"></div> -->
-      <p>There are a few important safety features incorporated into the laser cutter. Placed on the glass lid is a magnetic switch. If the lid is opened while the laser is running, the lense mechanism will keep moving, but the laser will stop firing. This
+
+      <p>There are a few important safety features incorporated into the laser cutter.
+        Placed on the glass lid is a magnetic switch. If the lid is opened while the laser is
+        running, the lense mechanism will keep moving, but the laser will stop firing. This
         means that it is very difficult (if not impossible) to burn yourself with the laser. A similar mechanism is incorporated into the front door.
       </p>
-      <h3>Control Pannel</h3>
+      <h3 id="ControlPanel">Control Panel</h3>
       <img title="cura" src="pictures/laserkeypad.png" alt="" class="image-triangle" />
       <ol>
         <li><b>Go:</b>Start or stop a job or process</li>
@@ -74,8 +78,9 @@
 
       <h2>What can it do?</h2>
       <img title="cura" src="pictures/rastervector.png" alt="" class="left" />
-      <p>The laser cutter has two different methods of transforming the material, either rastering or vectoring. Rastering is a type of engraving, where top layers of the material are removed to create a depression in the material. You will know the laser
-        is rastering because it is moving back and forth like a regular 2D printer.I said: Our laser has a built in setting that distributes the power settings over different shades. This means that a darker shade will look darker because it received
+      <p>The laser cutter has two different methods of transforming the material,
+        either rastering or vectoring. Rastering is a type of engraving, where top layers of the material are removed to create a depression in the material. You will know the laser
+        is rastering because it is moving back and forth like a regular 2D printer. Our laser has a built in setting that distributes the power settings over different shades. This means that a darker shade will look darker because it received
         more power when rastered. Think of it like a black and white printer.
         <br><br> Vectoring is most often used to cut through a material. However, at lower settings it can also be used to engrave. Instead of moving back and forth, the laser is following a “vector”. A vector is a line with a specified direction and
         magnitude. In other words, a line that connects two points. Our laser has a point of 0.001” (0.0254 mm) in diameter. For a line to be recognised as a vector, the line width has to be the size of the point. We will explain how to do this further
@@ -97,7 +102,9 @@ MINI/HELIX</a>.
       <p>The laser cutting process is as follows:</p>
       <ol>
         <li>Prepare your file and select your material</li>
-
+        <li>
+          Move your file to the laser cutter computer
+        </li>
         <li>Turn on laser cutter setup</li>
         <li>Prepare laser cutter</li>
         <li>Click print and select print settings</li>
@@ -110,11 +117,11 @@ MINI/HELIX</a>.
 
       <h3>1. Prepare your file and select your material</h3>
       <p>Before you are going to start laser cutting, you need to get some prep work out of the way. First you need to create or select your file. If you are rastering an image, you can select or create an image in any program or use an existing picture.
-        <br>If you want to add vector cuts, you need to use a program that has the ability to create vectors. We use a free program called inkscape. A guide on how to use the program can be found here. Unfortunately you can’t print directly from inkscape.
-        However, simply save your file as .pdf.
+        If you are rastering an image, you can select or create an image in any program or use an existing picture.
+  <br>If you want to add vector cuts, you need to use a program that has the ability to create vectors. We use a free program called inkscape. A guide on how to use the program can be found <a href="inkscape.html">here</a>. Unfortunately you can’t print directly from inkscape, you need to simply save your file as .pdf.
       </p>
       <h3>2. Move file to the laser cutter computer</h3>
-      <p>Once you have saved your file as a .pdf, move it to a USB drive and bring it over to the laser cutter computer. Open your file on the computer</p>
+      <p>Once you have saved your file as a .pdf, move it to a USB drive and bring it over to the laser cutter computer. Open your file on the computer.</p>
 
       <h3>3.Turn on the laser cutter</h3>
       <p>
@@ -125,8 +132,7 @@ MINI/HELIX</a>.
           <b>Laser cutter:</b> Switch on left hand side at the back. When you turn on the laser cutter, let the head move around freely. Refrain from touching any other buttons until it has finished this process.
         </li>
         <li>
-          <b>Air filter:</b> Power button at bottom front. If the filter sounds a high pitch tone during the laser cutting process, please
-
+          <b>Air filter:</b> Power button at bottom front.
         </li>
         <li>
           <b>Air compressor:</b> Switch Located on top left hand side
@@ -134,13 +140,14 @@ MINI/HELIX</a>.
       </ul>
       <h3>4. Prepare the laser cutter</h3>
       <p>
-        The laser cutter needs to be be adapted to the material and image you are going to cut. This is done by changing the height and the laser’s home. The height affects the laser’s focus and the home is related to the aforementioned center engraving.
+        The laser cutter needs to be be adapted to the material and image you are going to cut. This is done by changing the height and the laser’s home. The height affects the laser’s focus and the home is related to the center engraving. More information about this can be found on the <a href="lasersettings.html#options">laser settings page</a>.
+
 
       </p>
       <ul>
         <li>
-          <b>Setting Home:</b>This is setting the origin for the laser. If you do not have center engraving select. This will be the top left hand corner of the piece. For more information, see the laser setting page.
-          <ol>
+          <b>Setting Home:</b> This is setting the origin for the laser. If you do not have center engraving select. This will be the top left hand corner of the piece. For more information, see the laser setting page.
+      <br />  <br /><ol>
             <li>
               Make sure the laser cutter is on.
 
@@ -167,17 +174,18 @@ MINI/HELIX</a>.
         </li>
         <li>
           <b>Focusing laser:</b> We do not use the automatic focus function on the laser, therefore you need to manually focus the laser before your cut.
-          <ol>
+          <br />  <br />  <ol>
             <li>
               Make sure the laser is on.
 
             </li>
             <li>
-              Place the material on the laser bed. You want to make sure that the are you are cutting is parallel to laser bed and the track on which the laser head moves. If there is a variation in height, you will see a variation in properties of the rastering and vectoring done by the laser
+              Place the material on the laser bed. You want to make sure that the are you are cutting is parallel to laser bed and the track on which the laser head moves. If there is a variation in height, you will see a variation in properties of the rastering and
+              vectoring done by the laser
 
             </li>
             <li>
-              Place the manual focus guide onto the laser cutter head. The guide is attached with magnets.  <img title="cura" src="pictures/manualfocus.png" alt="" class="image-triangle" />
+              Place the manual focus guide onto the laser cutter head. The guide is attached with magnets. <img title="cura" src="pictures/manualfocus.png" alt="" class="image-triangle" />
             </li>
             <li>Press the Focus button on the laser cutter control panel. The laser head will move over slightly, make sure that the material is still under the manual focus.
 
@@ -210,6 +218,35 @@ MINI/HELIX</a>.
         When all settings are chosen, click print. If you look over to the laser cutter the name of the file should appear on the control panel. Wait until the data light is no longer flashing.
       </p>
 
+      <h3>6. Start cut</h3>
+      <ol>
+        <li>
+          Make sure that the glass cover is down and that you have prepare the laser. Check that your job is set on displayed on the laser cutter.
+
+        </li>
+        <li>
+          Press the green go.
+
+        </li>
+        <li>
+          While the laser cutter is cutting, do not leave the laser cutter unattended. If small flames appear, <b>do not panic.</b> As long as you piece is not actively burning, you are ok. If at any point you are unsure, pause your cut and find the Makerspace
+          coordinator on duty. You can pause your cut by pressing the red stop button. Leave the lid closed. To resume, press the green go button
+
+        </li>
+      </ol>
+
+      <h3>7. Turn off laser cutter setup</h3>
+      <p>
+        When you are finished all your cuts, turn off the laser cutter, air compressor, and air filter.
+      </p>
+<h3>Clean up
+</h3>
+<p>
+  So that our laser remains operational, it is important that we clean up after each cut. Clean off any debris that can be found on the the laser cutter bed. Using the handles on the front of the laser cutter, open the front of the laser. Empty the debris tray and replace it.
+
+
+</p>
+
   </article>
 
   <footer>
@@ -226,6 +263,13 @@ MINI/HELIX</a>.
       </tr>
     </table>
   </footer>
+
+
+  <script>
+    console.log("hi");
+    var x = document.getElementsByTagName("h3");
+    console.log(x.length);
+  </script>
 
   <!-- <script>
   console.log("hello");
