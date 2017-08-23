@@ -13,6 +13,7 @@ body {
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+  line-height: 26px;
 }
 
 ul {
@@ -20,10 +21,18 @@ ul {
 
 
 }
-ul.a {
+.a {
   list-style-type: circle;
 }
+.b{
+  list-style-type: square;
 
+  content: "\2610";
+   margin-right:5px;
+}
+.c{
+  list-style-type: upper-roman;
+}
 ol {
   font-family: 'Raleway', sans-serif;
 
@@ -52,7 +61,7 @@ article {
   padding: 1px;
   padding-bottom: 200px;
   overflow: hidden;
-  max-width: 100%;
+
   font-family: 'Playfair Display', serif;
 }
 
@@ -89,7 +98,7 @@ h1 {
 
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h3 {
@@ -98,7 +107,10 @@ h3 {
   font-weight: lighter;
   font-size: 18px;
 }
-
+h4 {
+  font-style: italic;
+  font-size: 10px;
+}
 
 /*All nav bar stuff*/
 
@@ -150,6 +162,38 @@ button {
 height: 70px;
 }
 
+.maincontent{
+  width:80%;max-width:1000px; margin:auto
+}div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+button.accordion {
+  background-color: #ddd;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+button.accordion.active{
+  background-color: #ddd;
+
+}
+ button.accordion:hover {
+  background-color: #5f9ea0;
+}
+
+div.panel {
+  padding: 10px 18px;
+  display: none;
+  background-color: #ddd;
+}
 
 /*All tables*/
 
@@ -350,6 +394,11 @@ button:hover {
   padding: 5px;
 }
 
+.imgagegrid{
+  display: inline-grid;
+  margin: 15px;
+}
+
 @media all and (min-width: 768px) {
   .nav {
     text-align: left;
@@ -404,12 +453,17 @@ button:hover {
   border-color: #5f9ea0;
   border-radius: 15px;
 }
-.image-triangle:hover img {
-  -moz-transform: scale(1.10);
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
+.image-list {
+  display: block;
+  margin: 10px auto;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+  border: solid;
+  border-width: medium;
+  border-color: #5f9ea0;
+  border-radius: 15px;
 }
-
 .transbox {
   width: 250px;
   background-color: #ffffff;
