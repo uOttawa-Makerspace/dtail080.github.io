@@ -91,6 +91,7 @@
 
   h1 {
     font-family: 'Raleway', sans-serif;
+    color: #366;
   }
 
   h2 {
@@ -410,16 +411,23 @@ color: white;
     margin-left: 10px;
     margin-bottom: 10px;
     border: 5px solid #5f9ea0;
+    border-radius: 10px;
+
   }
 
   .left {
     float: left;
+    border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     border: 5px solid #5f9ea0;
     padding: 10px;
   }
-
+.toc{
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
   .floating-box {
     float: left;
     width: 200px;
@@ -441,6 +449,7 @@ color: white;
 
   .imgagegrid {
     display: inline-grid;
+    border-radius: 10px;
     margin: 15px;
   }
 
