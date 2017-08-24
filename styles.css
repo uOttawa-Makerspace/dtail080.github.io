@@ -91,6 +91,7 @@
 
   h1 {
     font-family: 'Raleway', sans-serif;
+    color: #366;
   }
 
   h2 {
@@ -419,7 +420,11 @@ color: white;
     border: 5px solid #5f9ea0;
     padding: 10px;
   }
-
+.toc{
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
   .floating-box {
     float: left;
     width: 200px;
