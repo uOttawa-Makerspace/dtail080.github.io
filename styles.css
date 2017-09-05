@@ -289,6 +289,9 @@
         text-align: center;
         font-size: 0.8em;
       }
+      .wrap th{
+        text-align: left;
+      }
       /*Footer */
 
       .tablefooter {
