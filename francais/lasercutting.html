@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <title>Découpe laser</title>
+  <meta charset="utf-8" />
+
+  <script type="text/javascript" src="script.js">
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="nav">
+    <center>
+
+      <a href="index.html"> <img class="logo" title="maker club" src="../pictures/CEED_LOGO_BLACK_ORANGE.png" alt="" /></a>
+      <ul>
+        <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
+        <a href="opportunities.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
+        <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
+        <!-- <a href="#ControlPanel">f</a> -->
+        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:webmaster@makerepo.com?Subject=Content%20Error" target="_top">webmaster@makerepo.com</a></p>
+    </center>
+    </ul>
+  </nav>
+  <article>
+    <div class="content">
+
+      <center>
+        <h1 class="main-title">Découpe laser</h1>
+        <hr/>
+      </center>
+      <div class="toc">
+        <h3>Table des matières</h3>
+        <ol>
+          <li>
+            <a href="#whatis">Qu’est ce que la découpe laser?</a>
+          </li>
+          <li>
+            <a href="#howto">Comment découper au laser?</a>
+          </li>
+
+        </ol>
+      </div>
+      <h2 id="whatis">Qu’est ce que la découpe laser?</h2>
+      <p>
+          La réponse la plus simple à cette question est que c’est un laser qui coupe. Il est composé d’un lit
+          ou d’une plateforme sur laquelle le matériaux à transformer est placé. Au dessus du lit, il y a la tête
+          du découpeur laser. Elle est composée d’un miroir et d’une lentille convergente qui peut se déplacer dans
+          2 dimensions. Cette lentille concentre le rayon de lumière qui va soit couper ou graver le matériaux en
+          dessous. La coupe au laser est optimale pour les travaux complexes et précis.
+      </p>
+      <h2>Apprendre à connaître l’installation du découpeur laser</h2>
+
+      <p>Il y a 4 parties à l’installation du découpeur laser:
+        <ul>
+          <li>Ordinateur</li>
+          <li>Filtre à air</li>
+          <li>Découpeur laser</li>
+          <li>Compresseur</li>
+        </ul>
+        <img title="cura" src="../pictures/lasercuttersetup.png" alt="" class="image-triangle" />
+      </p>
+      <p>
+          Comme montré dans l’image ci-dessous, le découpeur laser a un bouton d’allumage situé au bas du côté
+          gauche du laser. Le panneau de contrôle principal est situé à l’avant.
+      </p>
+      <img title="cura" src="../pictures/gtklaser.png" alt="" class="image-triangle" id="imgZoom" onmousemove="zoomIn(event)" onmouseout="zoomOut()" />
+
+      <p>
+          Il y a quelques dispositifs de sécurité importants incorporés au découpeur laser. Placée sur le couvercle
+          de verre, il y a un interrupteur magnétique. Si le couvercle est ouvert pendant que le laser fonctionne,
+          le mécanisme de la lentille va continuer de bouger, mais le laser va cesser d’être tiré. Cela signifie qu’il
+          est très difficile (voire impossible) de se brûler avec le laser. Un mécanisme similaire est incorporé dans
+          la porte avant.
+      </p>
+      <h3 id="ControlPanel">Control Panel</h3>
+      <img title="cura" src="../pictures/laserkeypad.png" alt="" class="image-triangle" />
+      <ol>
+        <li><b>Go:</b>Débute ou arrête un travail ou processus</li>
+        <li><b>Stop:</b> Arrête un processus. Quand il est en train de graver par infographie, il va arrêter immédiatement.
+            Pendant la vectorisation, il ne s’arrêtera que lorsqu’il aura fini son trajet actuel.</li>
+        <li><b>Reset:</b> Déplace la tête vers sa position zéro</li>
+        <li><b>Set Home:</b> Défini le point zéro, ou le point de départ du laser</li>
+        <li><b>X/Y Off:</b> Appuyez sur ce bouton puis aller désengager les moteurs et déplacer la tête du laser manuellement.</li>
+        <li><b>Pointer:</b> Allumer le pointeur lumineux rouge</li>
+        <li><b>Focus:</b> Appuyez sur ce bouton puis soit le bouton haut ou bas pour faire monter ou baisser le lit. Utiliser ce procédé avec l’outil de focalisation permet de focaliser le laser.</li>
+        <li>&#8710;<b>/</b>&#8711;:Permet de choisir le travail ou de baisser ou augmenter la puissance, la vitesse, ou la hauteur du lit</li>
+        <li><b>Power:</b> En gravant par infographie,
+            vous pouvez ajuster la puissance en appuyant sur ce bouton et en utilisant les flèches</li>
+        <li><b>Speed:</b> En gravant par infographie, vous pouvez ajuster la vitesse en appuyant sur ce bouton et en utilisant les flèches</li>
+
+      </ol>
+
+      <h2>What can it do?</h2>
+      <img title="rastering and vectoring" src="../pictures/rastervector.png" alt="" class="left" />
+      <p>Le découpeur laser a deux différentes méthodes de transformation du matériaux: soit en gravant par
+          infographie ou en utilisant des vecteurs. La gravure par infographie est une sorte de gravure, où
+          les couches supérieures du matériaux sont retirées pour créer une dépression dans le matériaux. Vous
+          saurez que le laser est en train de graver car il se déplace d’avant à arrière comme une imprimante
+          régulière. Notre laser a des paramètres inclus qui distribuent les paramètres de puissance sur différentes
+          teintes. Cela veut dire qu’une teinte plus sombre aura l’air lus sombre parce qu’elle a reçu plus de
+          puissance lors de la gravure. Vous pouvez le voir comme une imprimante en noir et blanc.
+        <br><br>
+          La vectorisation est le plus souvent utilisée pour couper au travers d’un matériaux. Cependant,
+          à faible puissance, elle peut être utilisée pour graver. Au lieu de bouger d’avant à arrière, le laser
+          suit un “vecteur”. Un vecteur est une ligne ayant une direction et une magnitude spécifiée. En d’autres
+          mots, une ligne qui connecte deux points. Notre découpeuse laser a un point de 0.001’’ (0.0254mm) de
+          diamètre. Pour qu’une ligne soit reconnue comme un vecteur, sa largeur doit être la même que la taille du
+          point. Nous allons expliquer comment le faire plus loin dans ce document.
+      </p>
+
+
+
+      <h2 id="howto">How to laser cut in the Makerspace</h2>
+      <p>Pour pouvoir effectuer une découpe laser au makerspace, nous demandons que vous:</p>
+      <ul>
+        <li>Participiez à un atelier de découpe laser;</li>
+        <li>Aparticipiez à une session de formation à l’arrivé;</li>
+        <li>ou soyez sous la supervision directe de quelqu’un qui a reçu une formation.</li>
+      </ul>
+      <p>Avant d’utiliser la découpeuse laser, veuillez lire la page sur <a href="lasersafety.html">La sécurité au laser</a>.
+          Toute l’information dans ce document peut aussi être trouvée dans Le
+          <a href="https://www.epiloglaser.com/downloads/pdf/mini_helix_4.22.10.pdf">manuel du propriétaire pour epilog mini/helix.</a>.
+      </p>
+      <p>Le processus de découpe au laser est le suivant:</p>
+      <ol>
+        <li><a href="#preparefile">Préparez le fichier et sélectionner votre matériaux</a></li>
+        <li><a href="#move">Déplacez votre fichier vers l’ordinateur de la découpeuse laser</a>        </li>
+        <li><a href="#turnon">Allumez l'installation de la découpeuse laser</a></li>
+        <li><a href="#preparelase">Préparez la découpeuse laser</a></li>
+        <li><a href="#settings">Appuyez sur “print” et sélectionnez les paramètres d’impression</a></li>
+        <li><a href="#start">Débutez la coupe</a></li>
+        <li><a href="#turnoff">Éteignez l’installation de Découpe laser</a></li>
+        <li><a href="#clean">Nettoyez</a></li>
+      </ol>
+
+
+
+      <h3 id="preparefile">1. Préparez le fichier et sélectionner votre matériaux</h3>
+      <p>Avant de commencer la coupe au laser, il vous faudra effectuer quelques travaux préparatoires.
+          Premièrement il faudra créer ou sélectionner votre fichier. Si vous êtes en train de graver une image,
+          vous pouvez sélectionner ou créer une image dans n’importe quel programme ou utiliser une image existante.
+          Si vous voulez ajouter des coupes vectorielles, vous aurez à utiliser un programme qui est capable de créer
+          des vecteurs. Nous utilisons un programme libre appelé <a href=https://inkscape.org/en/>Inkscape</a>.
+          Un guide sur l’utilisation de ce programme peut être trouvé <a href="inkscape.html">ici</a>. Malheureusement, vous ne pouvez pas
+          imprimer immédiatement d’Inkscape, vous devez simplement enregistrer votre document au format PDF.
+      </p>
+      <h3 id="move">2. Déplacez votre fichier vers l’ordinateur de la découpeuse laser</h3>
+      <p>Lorsque vous aurez sauvegardé votre fichier au format PDF, déplacez le vers une clé USB et emportez la à l’ordinateur de la découpeuse laser. Ouvrez le fichier sur l’ordinateur</p>
+
+      <h3 id="turnon">3. Allumez l'installation de la découpeuse laser<</h3>
+      <p>
+          Voici les trois choses à activer:
+      </p>
+      <ul>
+        <li>
+          <b>Laser cutter:</b> Découpeuse laser: Interrupteur du côté gauche, à l’arrière. Quand vous allumez
+            la découpeuse laser, laissez la tête bouger librement. Évitez de toucher à d’autres boutons jusqu’à ce
+            que le processus se termine.
+        </li>
+        <li>
+          <b>Air filter:</b> Bouton d’allumage à l’avant, en bas.
+        </li>
+        <li>
+          <b>Air compressor:</b> Interrupteur situé du côté gauche, en haut.
+        </li>
+      </ul>
+      <h3 id="preparelaser">4. Préparez la découpeuse laser</h3>
+      <p>
+          La découpeuse laser a besoin d’être adaptée au matériaux et à l’image que vous allez couper. Cela
+          se fait en changeant la hauteur et le point de départ du laser. La hauteur affecte la focalisation
+          du laser et le point de départ est relié au gravage central. Plus d’informations à ce sujet peut être
+          trouvé sur <a href="lasersettings.html#options">laser settings page</a>.
+
+
+      </p>
+      <ul>
+        <li>
+          <b>Définir le point de départ</b> Cela définit l’origine pour le laser. Si vous ne sélectionnez
+            pas centre de la gravure, ce point sera le coin supérieur gauche de la pièce. Pour plus d’information,
+            voyez la page Paramètre laser.
+      <br />  <br /><ol>
+            <li>
+                Assurez-vous que la découpeuse laser est allumée.
+
+            </li>
+            <li>
+                Appuyez sur le bouton du pointeur. Vous devriez voir un point rouge sous la tête du laser. C’est la position actuelle du pointer.
+            </li>
+            <li>
+                Appuyez sur X/Y Off.
+
+            </li>
+            <li>
+                Appuyez sur Go. Vous devriez être capable de déplacer librement la tête du laser.
+
+            </li>
+            <li>
+                Déplacez la tête du laser pour que le point soit à la position désirée.
+
+            </li>
+            <li>
+                Appuyez sur “set home”. Vous ne devriez plus être capable de déplacer la tête du laser, et l’origine est défini.
+            </li>
+          </ol>
+        </li>
+        <li>
+          <b>Focaliser le laser:</b> Nous n’utilisons pas les fonctions de focus automatique sur le laser, donc vous aurez à manuellement focaliser le laser avant votre coupe.
+          <br />  <br />  <ol>
+            <li>
+                Assurez-vous que le laser est allumé.
+
+            </li>
+            <li>
+                Placez le matériaux sur le lit du laser. Vous voulez vous assurer que ce que vous coupez est
+                parallèle au lit du laser et au chemin sur lequel la tête du laser bouge. S’il y a une différence
+                de hauteur, vous verrez une variation dans les propriétés de vectorisation et de gravure par
+                infographie faite par le laser.
+
+            </li>
+            <li>
+                Placez le guide de focalisation manuelle sur la tête du laser. Ce guide est attaché avec des aiments.
+                <img title="cura" src="../pictures/manualfocus.png" alt="" class="image-triangle" />
+            </li>
+            <li>Appuyez sur le bouton “Focus” sur le panneau de contrôle de la découpeuse laser.
+
+
+            </li>
+            <li>
+                En utilisant les flèches haut et bas, augmentez ou baissez le lit jusqu’à ce que le guide de focalisation manuelle repose sur le matériaux sans être levé de sa base.
+
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <h3 id="settings">5. Appuyez sur “print” et sélectionnez les paramètres d’impression</h3>
+      <p>Sur l’ordinateur, appuyez sur imprimer. La fenêtre des paramètres d’impression va apparaître. </p>
+      <img title="cura" src="../pictures/Printlaser.png" alt="" class="image-triangle" />
+      <ol>
+        <li>Choisissez la découpeuse laser que vous allez utiliser. </li>
+        <li>Allez sur la page propriétés. Cela va faire apparaître une page sur les paramètres de la découpeuse laser.
+            Consultez le manuel de la découpeuse laser pour les paramètres de vitesse et de vecteurs appropriés.
+            Plus d’information sur les paramètres peuvent être trouvés sur la page <a href="lasersettings.html">paramètres laser</a>
+            Quand vous avez terminé de sélectionner tous vos paramètres, cliquez sur ok. Cela va vous ramener à la page d’impression. </li>
+        <li>
+            Assurez-vous que l’image est fixée à Taille Réelle. Si elle est dans le mode où elle s’adapte aux lignes vectorielles, ça ne va probablement pas fonctionner.
+        </li>
+
+        <li>
+            Sélectionnez l’orientation, soit automatique, portrait ou paysage. La plupart du temps,
+            elle sera en auto portrait/paysage. Cela signifie que le laser va prendre en compte la taille de
+            l’image que vous essayez de découper et la taille que vous avez ajouté dans la page propriétés. Il va
+            essayer de placer l’image dans le sens où elle irait le mieux. Si vous voulez votre image dans une
+            direction spécifique, sélectionnez portrait ou paysage.
+        </li>
+
+      </ol>
+      <p>
+          Quand tous les paramètres sont sélectionnés appuyez sur imprimer. Si vous regardez sur
+          le panneau de contrôle du laser, le nom du fichier devrait apparaître. Attendez jusqu’à ce que la
+          diode de données cesse de clignoter.
+      </p>
+
+      <h3 id="start">6. Débutez la coupe</h3>
+      <ol>
+        <li>
+            Assurez-vous que le couvercle de verre soit abaissé et que vous avez préparé le laser.
+            Vérifiez que le travail est affiché sur le laser.
+
+        </li>
+        <li>
+            Appuyez sur le bouton go.
+
+        </li>
+        <li>
+            Pendant que le laser coupe, ne le
+            laissez pas sans surveillance. Si de petites flammes apparaissent, ne paniquez pas.
+            Tant que la pièce ne brûle pas activement, vous êtes correct. Si à n’importe quel moment
+            vous vous sentez incertain, mettez en pause votre coupe et allez chercher un coordinateur du Makerspace
+            qui travaille. Vous pouvez mettre en pause votre coupe en appuyant sur le bouton stop rouge. Pour
+            reprendre, appuyez sur le bouton go vert.
+
+        </li>
+      </ol>
+
+      <h3 id="turnoff">7. Éteignez l’installation de Découpe laser</h3>
+      <p>
+          Quand vous avez terminé toutes vos coupes, éteignez le laser, le compresseur et le filtre.
+      </p>
+<h3 id="clean">8. Nettoyez</h3>
+<p>
+    Pour que notre laser reste opérationnel, il est important qu’on le nettoie après chaque utilisation.
+    Nettoyez tous les débris qui peuvent être trouvés sur le lit du laser. À l’aide des poignées à l’avant
+    du laser, ouvrez l’avant. Videz le plateau de débris et replacez le.
+
+</p>
+    </div>
+
+  </article>
+
+  <footer>
+
+    <table class="tablefooter">
+      <tr>
+        <td>Contact: webmaster@makerepo.com<br>Copyright 2017 &copy; Makerepo.com</td>
+        <td> <a href="disclaimer.html"><button type="button" class="footerbutton">Disclaimer</button></a></td>
+        <td>
+
+          <td>
+            <a href="francais/avenir.html"><button type="button" class="footerbutton">Français</button></a></td>
+
+      </tr>
+    </table>
+  </footer>
+
+
+  <script>
+    console.log("hi");
+    var x = document.getElementsByTagName("h3");
+    console.log(x.length);
+  </script>
+
+  <!-- <script>
+  console.log("hello");
+  function zoomIn(event) {
+    var element = document.getElementById("overlay");
+    element.style.display = "inline-block";
+    var img = document.getElementById("imgZoom");
+    var posX = event.offsetX ? (event.offsetX) : event.pageX - img.offsetLeft;
+    var posY = event.offsetY ? (event.offsetY) : event.pageY - img.offsetTop;
+    element.style.backgroundPosition = (-posX * 4) + "px " + (-posY * 4) + "px";
+
+  }
+
+  function zoomOut() {
+    var element = document.getElementById("overlay");
+    element.style.display = "none";
+  }
+</script> -->
+</body>
+
+</html>
