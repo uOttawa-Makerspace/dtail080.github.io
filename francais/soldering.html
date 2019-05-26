@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <title>Soldering</title>
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+  <nav class="nav">
+    <center>
+
+      <a href="index.html"> <img class="logo" title="maker club" src="../pictures/CEED_LOGO_BLACK_ORANGE.png" alt="" /></a>
+      <ul>
+        <a href="index.html"><button type="button"class="navbutton">Volunteer<br>Information</button></a>
+        <a href="opportunities.html"><button type="button"class="navbutton">Current<br> Opportunities</button></a>
+        <a href="resources.html"><button type="button"class="navbutton">Resources</button></a>
+
+        <p class="navtext"> This site is a work in progress, more updates to come shortly. If you see any mistakes or typos please email <a href="mailto:webmaster@makerepo.com?Subject=Content%20Error" target="_top">webmaster@makerepo.com</a></p>
+      </ul>
+    </center>
+    </ul>
+  </nav>
+  <article>
+    <div style="max-width: 80%; margin-left:auto;margin-right:auto;">
+
+      <center>
+        <h1 class="main-title">Soudure</h1>
+        <hr/>
+      </center>
+      <p>La soudure est un procédé fréquemment utilisé en électronique. Il consiste à faire fondre une pièce de métal pour le relier à une ou d’autres pièces. Non seulement cela permet à l’électricité de circuler, mais il fixe également l’élément du circuit en place.
+        <br />
+        Nous allons explorer deux différents contextes d’application de la soudure. Le premier est de souder ensemble deux différents fils, et le deuxième est la soudure d’un élément sur une perfboard ou une carte a circuit imprimé. La perfboard est une carte rigide percée d’un réseau de trous. Chaque perforation est entourée d’une plage de cuivre sur lequel vous pouvez appliquer la soudure. La carte a circuit imprimé est aussi appelée PCB, de l’anglais printed circuit board. Elle est similaire à une perfboard à part le fait que ses éléments sont reliés à partir d’un matériau conducteur intégré dans la plaque.
+ </p><hr/>
+      <h1>Le processus de soudure</h1>
+      <h2> Ce dont on a besoin :</h2>
+        <ul>
+          <li> Fer à souder</li>
+          <li> Soudure (de préférence sans plomb)</li>
+          <li> Les éléments que vous voulez souder entre eux</li>
+          <li> Ventilateur d’aération</li>
+
+          <h3>Outils optionnels :</h3>
+          <li>Mèche de soudure</li>
+          <li>Instrument de dessoudage</li>
+          <li>Tapis de brasage</li>
+        </ul>
+
+      <h2>Souder deux fils ensemble</h2>
+
+      <p>Souder deux fils est la meilleure pratique pour commencer la soudure. Il existe deux types de fils : les fils torsades et les fils à cœur solide. Les deux ont un centre métallique recouvert de plastique. Pour voir le métal a l’intérieur, vous aurez besoin d’enlever le plastique. Il existe des outils spéciaux appelés «dénude-fils» (wire-strippers) pour effectuer cela. Toutefois, de ciseaux peuvent aussi faire l’affaire. Vous pouvez accéder à une vidéo expliquant comment dénuder un fil en cliquant <a href="bum.html">ici</a>.
+      </p>
+      <img title="Types of wire" src="../pictures/solidvsstranded.png" alt="" class="image-triangle" />
+
+      <!-- <div class="floating-box">
+        <p><b>Which wire is right for me?</b><br>Stranded wire is more flexible and is ideal for projects where the wire will be moving or bending and unbending repeatedly. Solidcore is a lot easier to use when you are attaching the wire to a perfboard,
+          PCB, or when inserting into a breadboard.
+        </p>
+      </div> -->
+      <h3>Procedure</h3>
+      <ol>
+        <li>Prenez quelques fils, dénudez 1 cm de chaque bout et pliez-les de façon à obtenir un U. </li>
+        <li>Faites s’accrocher les deux bouts en U avec une pince. </li>
+          <img src="../pictures/twowirebent.png" class="image-triangle"/>
+        <li>Tenez le fer à souder comme un stylo. Chauffer deux fils pendant 1-2 secondes puis laissez couler de la soudure sur le point de jointure. Le but est de chauffer le raccordement, non la soudure. Une fois que la soudure se sera écoulée uniformément tout autour de la jointure, enlever la
+          soudure et le fer à souder.
+        </li>
+        <img src="../pictures/solderwire.png" class="image-triangle"/>
+
+<li>
+  Laissez le raccordement se refroidir, cela prend généralement 20 à 30 secondes. Pendant ce temps, éviter de déplacer les fils.
+</li>
+<img src="../pictures/soldered2wires.png" class="image-triangle"/>
+
+      </ol>
+
+<h2>Souder sur une carte</h2>
+<ol>
+<li>
+  Passer le conducteur (la tige de métal provenant de l’élément à souder) ou le fil à travers le trou de la perfboard ou du PCB.
+</li>
+<li>
+  En tenant le fer a souder comme un stylo, chauffer la plaque de cuivre et dirigez avec le fer à souder jusqu’à ce que la soudure commence à se liquéfier et à s’écouler pour former une liaison forte. Retirez alors la soudure, puis le fer a souder. Ce procédé ne prendra que quelques secondes.
+  <img src="../pictures/perfsolder.png" class="image-triangle"/>
+</li>
+<li>Laissez le raccordement se refroidir.</li>
+
+</ol>
+
+    </div>
+
+  </article>
+
+  <footer>
+
+    <table class="tablefooter">
+      <tr>
+        <td>Contact: webmaster@makerepo.com<br>Copyright 2017 &copy; Makerepo.com</td>
+        <td> <a href="disclaimer.html"><button type="button" class="footerbutton">Disclaimer</button></a></td>  <td>
+
+          <a href="francais/avenir.html"><button type="button" class="footerbutton">Français</button></a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

@@ -566,23 +566,27 @@
       }
 
       @media (max-width: 768px) {
-        nav {
-          position: static;
-          max-width: 100%;
-        }
-        .logo {
-          width: 240px;
-          padding: 10px;
-          margin: auto;
-        }
-        article {
-          margin-left: auto;
-        }
-        #overlay {
-          border: 1px solid black;
-          width: 200px;
-          height: 200px;
-          display: inline-block;
-          background-image: url('http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg');
-          background-repeat: no-repeat;
-        }
+          nav {
+              position: static;
+              max-width: 100%;
+          }
+
+          .logo {
+              width: 240px;
+              padding: 10px;
+              margin: auto;
+          }
+
+          article {
+              margin-left: auto;
+          }
+
+          #overlay {
+              border: 1px solid black;
+              width: 200px;
+              height: 200px;
+              display: inline-block;
+              background-image: url('http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg');
+              background-repeat: no-repeat;
+          }
+      }
